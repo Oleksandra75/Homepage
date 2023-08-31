@@ -836,15 +836,22 @@ body{
     z-index: 2;
     border-radius: 50%;
     background-color: #20AD96;
-    width: 22%;
-    height: 22%;
+    width: 96px;
+    height: 96px;
 }
+}
+@media(max-width: 991.98px){
+    .freeguid__container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 30px;
+    }
 }
 
 .freeguid__image img{
     max-width: 100%;
 }
-@media(max-width: 767.98px) {
+@media(max-width: 991.98px) {
     .freeguid__image::before {
         content: 'Free guide!';
         position: absolute;
@@ -858,8 +865,8 @@ body{
         z-index: 2;
         border-radius: 50%;
         background-color: #20AD96;
-        width: 21%;
-        height: 21%;
+        width: 21.524664%; /* 96/446 */
+        height: 16.523236%; /* 96/581 */
     }
     .freeguid {
         padding-top: 100px;
@@ -872,14 +879,12 @@ body{
 }
 
 @media(max-width: 767.98px) {
+    .freeguid__title {
+        font-size: 40px;
+    }
     .freeguid {
         padding-top: 80px;
         padding-bottom: 60px;
-    }
-    .freeguid__container {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 30px;
     }
 
     .freeguid__content {
@@ -889,6 +894,7 @@ body{
     .freeguid__image {
         text-align: center;
     }
+
 }
 /* --------------------------------------------------- */
 .meet {
@@ -967,7 +973,7 @@ body{
 
 @media (max-width:767.98px) {
     .content-meet__title {
-        font-size: 24px;
+        font-size: 40px;
     }
 }
 
